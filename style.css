@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-1: #000;
+  --cor-2: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  background-image: url("images/bg.jpg");
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-1);
+  opacity: 0.75;
+}
+
+.wrapper {
+  width: 90em;
+  height: auto;
+  background: var(--cor-2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
