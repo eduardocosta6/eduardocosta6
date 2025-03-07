@@ -7,11 +7,12 @@
 :root {
   --cor-1: #000;
   --cor-2: #fff;
+  --cor-3: #3f4a91;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--cor-2);
   overflow: hidden;
   background-image: url("images/bg.jpg");
 }
@@ -27,7 +28,7 @@ body {
 }
 
 .wrapper {
-  width: 90em;
+  width: 110em;
   height: auto;
   background: var(--cor-2);
   margin-left: auto;
@@ -36,4 +37,69 @@ body {
   border-radius: 10px;
   position: relative;
   z-index: 2;
+}
+
+.headerContent {
+  border-bottom: 5px solid var(--cor-1);
+  width: 70%;
+  margin-bottom: 6em;
+}
+.hello {
+  padding-left: 2em;
+}
+.headerContent h2 {
+  font-size: 35px;
+  padding-left: 6em;
+}
+.name {
+  padding-left: 2em;
+}
+
+.headerContent h1 {
+  font-size: 100px;
+}
+
+.pfp img {
+  height: auto;
+  width: 250px;
+  display: block;
+}
+.pfp {
+  display: flex;
+  border: 5px solid var(--cor-1);
+  border-radius: 5px;
+  margin-right: 2em;
+}
+
+.about-me {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  font-size: 18px;
+}
+
+.myInfo {
+  text-align: justify;
+}
+
+.border1 {
+  background-color: var(--cor-5);
+  border: 5px solid var(--cor-1);
+  color: var(--cor-2);
+  width: 20%;
+  height: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.mySkills {
+  display: inline-flex;
+}
+.border1 img {
+  position: relative;
+  width: 100%;
 }
