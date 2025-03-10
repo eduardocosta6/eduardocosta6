@@ -142,7 +142,7 @@ html {
 /* -------------------- */
 
 body {
-  background-image: url("images/background.jpg");
+  background-image: url("images/backg.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -161,19 +161,13 @@ body {
 .headerContent {
   border-bottom: 5px solid var(--cor-1);
 }
-/* 
-   .hello {
-  padding-left: 2em;
-} */
+
 .headerContent h2 {
   font-size: 30px;
 }
-/* .name {
-  padding-left: 2em;
-} */
 
 .headerContent h1 {
-  font-size: 60px;
+  font-size: 45px;
 }
 .pfp {
   margin-top: 1em;
@@ -186,6 +180,8 @@ body {
   display: block;
   border: 5px solid var(--cor-4);
   border-radius: 10px;
+  width: 250px;
+  height: 250px;
   }
 
   .about-me {
@@ -193,12 +189,33 @@ body {
     justify-content: center;
     max-width: 800px;
     margin: 50px auto;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .myInfo {
     text-align: justify;
     margin-top: 2em;
+    line-height: 35px;
   }
 
-  
+  .myInfo h2 {
+  font-size: 30px;
+  margin-bottom: 1mm;
+  }
+
+  .p2 {
+    margin-top: 1em;
+  }
+
+  .myskills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+  }
+
+  .mySkills h2 {
+    margin-top: 2em;
+    font-size: 30px;
+    margin-bottom: 1mm;
+    }

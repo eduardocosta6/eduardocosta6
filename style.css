@@ -30,6 +30,11 @@ body {
 .headerContent {
   border-bottom: 5px solid var(--cor-1);
 }
+
+.myInfo h2 {
+  font-size: 50px;
+}
+
 /* .hello {
   padding-left: 2em;
 }
