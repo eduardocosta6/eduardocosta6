@@ -143,7 +143,7 @@ html {
 
 body {
   background-image: url("images/bg.png");
- /*  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); */
+  /*  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,44 +213,57 @@ body {
   margin-top: 1em;
 }
 
-.imgProject1 {
-  margin-top: 1em;
+#myProjects {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.imgProject1 img {
-  display: block;
-  border: 5px solid var(--cor-4);
-  border-radius: 10px;
-  width: 450px;
-  height: 250px;
-  margin-bottom: 2em;
+.projectsContainer {
+  display: flex;
+  gap: 34px 16px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.mySkills {
-  align-items: center;
-  justify-content: center;
-  max-width: 800px;
-  margin: 50px auto;
-  font-size: 16px;
-  line-height: 25px;
+.projectCards {
+  max-width: calc((100% - 32px) / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
 }
 
-.project1 {
-  text-align: justify;
-  margin-top: 2em;
+.textProjectC {
+  flex-direction: column;
+  display: flex;
+  gap: 16px;
 }
 
-.mySkills h2 {
-  font-size: 30px;
-  margin-bottom: 1mm;
+.projectImage img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid red;
+}
+
+.textProject {
+  text-overflow: ellipsis;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  height: 140px;
 }
 
 .project1 h3 {
   font-size: 20px;
   margin-bottom: 1em;
+}
+
+.projectTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
 }
 
 a.button {
@@ -274,10 +287,16 @@ a.button:hover {
   transform: translateX(10px);
 }
 
+.tech {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin-top: 3em;
+}
 .techIcon {
   width: 42px;
   height: 42px;
-  margin-top: 1em;
 }
 
 .footer {
@@ -304,3 +323,4 @@ a.button:hover {
 .icon-img:hover {
   transform: scale(1.55);
 }
+/* ---------------------- */
