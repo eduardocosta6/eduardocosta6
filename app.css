@@ -324,3 +324,85 @@ a.button:hover {
   transform: scale(1.55);
 }
 /* ---------------------- */
+/* MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  /* Adjust header text sizes */
+  .headerContent h1 {
+    font-size: 28px;
+  }
+
+  .headerContent h2 {
+    font-size: 20px;
+  }
+
+
+  .pfp img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px; 
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .myInfo {
+    text-align: justify;
+    line-height: 28px;
+    margin-top: 1em;
+  }
+
+  .projectsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectCards {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+
+  a.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .tech {
+    justify-content: center;
+  }
+
+
+  .footer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headerContent h1 {
+    font-size: 34px;
+  }
+
+  .headerContent h2 {
+    font-size: 18px;
+  }
+
+
+  .pfp img {
+    width: 240px;
+    height: 240px;
+  }
+
+
+  .projectCards {
+    width: 100%;
+  }
+}
