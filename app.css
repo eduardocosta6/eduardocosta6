@@ -125,7 +125,10 @@ table {
 
 html {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 /* no formations ---------------------- */
@@ -168,13 +171,19 @@ body {
   width: 85%;
 }
 
-.headerContent h2 {
-  font-size: 30px;
+.headerContent h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-weight: 500;
 }
 
-.headerContent h1 {
-  font-size: 45px;
+.headerContent h2 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
+
 .pfp {
   margin-top: 1em;
   display: flex;
@@ -204,9 +213,9 @@ body {
   line-height: 35px;
 }
 
-.myInfo h2 {
-  font-size: 30px;
-  margin-bottom: 1mm;
+.myInfo h2, #myProjects h2, .projectTitle h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
 }
 
 .p2 {
@@ -280,11 +289,22 @@ a.button {
 a.button img {
   width: 16px;
   height: 16px;
-  transition: transform 0.3s ease;
 }
 
 a.button:hover img {
-  transform: translateX(10px);
+  animation: arrowMove 0.7s ease-in-out infinite;
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width: 768px) {
