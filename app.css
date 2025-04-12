@@ -148,18 +148,24 @@ html {
 /* -------------------- */
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  background-image: url("images/bg.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  background-color: var(--card-bg);
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 1500px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
+
 
 /* Header Styles */
 .headerContent {
@@ -171,11 +177,15 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+<<<<<<< HEAD
   background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+=======
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));  
+>>>>>>> b692f78ce6551ea3cfe27f2e5226f319fe839d24
 }
 
 .headerContent h2 {
