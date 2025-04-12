@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="icon" type="image/svg+xml" href="icons/separador.png"> -->
+  <meta name="theme-color" content="#2D3250">
+  <link rel="icon" type="image/svg+xml" href="icons/separador.png">  
   <link rel="shortcut icon" type="image/x-icon" href="icons/separador.png" />
   <title>Eduardo's Portfolio</title>
   <link rel="stylesheet" href="app.css">
@@ -14,12 +15,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:wght@200..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
   <div class="wrapper">
     <div class="header">
-      <div class="headerContent">
+      <div class="headerContent" data-aos="fade-up">
         <h1 class="hello">Hello,</h1>
         <h1 class="name">
           I'm Eduardo Costa
@@ -27,7 +29,7 @@
         <h2>Full Stack Web Developer</h2>
       </div>
     </div>
-    <div class="about-me">
+    <div class="about-me" data-aos="fade-up">
       <div class="pfp"><img src="images/pfp.jpg" alt="">
       </div>
       <div class="myInfo">
@@ -46,10 +48,10 @@
       </div>
     </div>
     <div id="myProjects">
-      <h2>My Projects</h2>
+      <h2 data-aos="fade-up">My Projects</h2>
       <div class="projectsContainer">
         <!-- Card 1 - MedBayes -->
-        <div class="projectCards">
+        <div class="projectCards" data-aos="fade-up">
           <div class="projectImage">
             <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
@@ -80,31 +82,27 @@
               </button>
             </div>
           </div>
-          <div class="textProjectContainer">
-            <div class="projectTitle">
-              <h3>MedBayes</h3>
-            </div>
-            <div class="textProject">The project consists of developing an automated medical screening system aimed at
+          <div class="projectContent">
+            <h3>MedBayes</h3>
+            <p class="projectDescription">The project consists of developing an automated medical screening system aimed at
               reducing the initial consultation time in healthcare facilities. The solution allows patients to input
-              symptoms and
-              physiological data, which are analyzed by the system to suggest a probable diagnosis based on Bayes'
-              Theorem.
+              symptoms and physiological data, which are analyzed by the system to suggest a probable diagnosis based on Bayes'
+              Theorem.</p>
+            <div class="tech">
+              <img src="icons/python-brands.svg" alt="Python" class="techIcon">
+              <img src="icons/react-brands.svg" alt="React" class="techIcon">
+              <img src="icons/js-brands.svg" alt="JavaScript" class="techIcon">
+              <img src="icons/database-solid.svg" alt="Database" class="techIcon">
             </div>
+            <a class="button" href="#">
+              <span>More Information</span>
+              <img src="icons/right_arrow.svg" alt="" class="arrow">
+            </a>
           </div>
-          <div class="tech">
-            <img src="icons/python-brands.svg" alt="" class="techIcon">
-            <img src="icons/react-brands.svg" alt="" class="techIcon">
-            <img src="icons/js-brands.svg" alt="" class="techIcon">
-            <img src="icons/database-solid.svg" alt="" class="techIcon">
-          </div>
-          <a class="button" href="#">
-            <span>More-Information</span>
-            <img src="icons/right_arrow.svg" alt="" class="arrow">
-          </a>
         </div>
 
         <!-- Card 2 -->
-        <div class="projectCards">
+        <div class="projectCards" data-aos="fade-up">
           <div class="projectImage">
             <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
@@ -135,53 +133,45 @@
               </button>
             </div>
           </div>
-          <div class="textProjectContainer">
-            <div class="projectTitle">
-              <h3>MedBayes</h3>
-            </div>
-            <div class="textProject">The project consists of developing an automated medical screening system aimed at
+          <div class="projectContent">
+            <h3>MedBayes</h3>
+            <p class="projectDescription">The project consists of developing an automated medical screening system aimed at
               reducing the initial consultation time in healthcare facilities. The solution allows patients to input
-              symptoms and
-              physiological data, which are analyzed by the system to suggest a probable diagnosis based on Bayes'
-              Theorem.
+              symptoms and physiological data, which are analyzed by the system to suggest a probable diagnosis based on Bayes'
+              Theorem.</p>
+            <div class="tech">
+              <img src="icons/html-logo.svg" alt="HTML" class="techIcon">
+              <img src="icons/css logo.svg" alt="CSS" class="techIcon">
+              <img src="icons/php-logo.svg" alt="PHP" class="techIcon">
+              <img src="icons/database-solid.svg" alt="Database" class="techIcon">
             </div>
+            <a class="button" href="https://github.com/eduardocosta6/Agenda">
+              <span>More Information</span>
+              <img src="icons/right_arrow.svg" alt="" class="arrow">
+            </a>
           </div>
-          <div class="tech">
-            <img src="icons/html-logo.svg" alt="" class="techIcon">
-            <img src="icons/css logo.svg" alt="" class="techIcon">
-            <img src="icons/php-logo.svg" alt="" class="techIcon">
-            <img src="icons/database-solid.svg" alt="" class="techIcon">
-          </div>
-          <a class="button" href="https://github.com/eduardocosta6/Agenda">
-            <span>More-Information</span>
-            <img src="icons/right_arrow.svg" alt="" class="arrow">
-          </a>
         </div>
 
         <!-- Card 3 -->
-        <div class="projectCards">
+        <div class="projectCards" data-aos="fade-up">
           <div class="projectImage"><img src="images/error.png" alt=""></div>
-          <div class="textProjectContainer">
-            <div class="projectTitle">
-              <h3>MedBayes</h3>
-            </div>
-            <div class="textProject">The project consists of developing an automated medical screening system aimed at
+          <div class="projectContent">
+            <h3>MedBayes</h3>
+            <p class="projectDescription">The project consists of developing an automated medical screening system aimed at
               reducing the initial consultation time in healthcare facilities. The solution allows patients to input
-              symptoms and
-              physiological data, which are analyzed by the system to suggest a probable diagnosis based on Bayes'
-              Theorem.
+              symptoms and physiological data, which are analyzed by the system to suggest a probable diagnosis based on Bayes'
+              Theorem.</p>
+            <div class="tech">
+              <img src="icons/python-brands.svg" alt="Python" class="techIcon">
+              <img src="icons/react-brands.svg" alt="React" class="techIcon">
+              <img src="icons/js-brands.svg" alt="JavaScript" class="techIcon">
+              <img src="icons/database-solid.svg" alt="Database" class="techIcon">
             </div>
+            <a class="button" href="#">
+              <span>More Information</span>
+              <img src="icons/right_arrow.svg" alt="" class="arrow">
+            </a>
           </div>
-          <div class="tech">
-            <img src="icons/python-brands.svg" alt="" class="techIcon">
-            <img src="icons/react-brands.svg" alt="" class="techIcon">
-            <img src="icons/js-brands.svg" alt="" class="techIcon">
-            <img src="icons/database-solid.svg" alt="" class="techIcon">
-          </div>
-          <a class="button" href="#">
-            <span>More-Information</span>
-            <img src="icons/right_arrow.svg" alt="" class="arrow">
-          </a>
         </div>
       </div>
     </div>
@@ -205,6 +195,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
 
 </html>
