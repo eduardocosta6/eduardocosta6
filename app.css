@@ -177,15 +177,11 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-<<<<<<< HEAD
   background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-=======
-  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));  
->>>>>>> b692f78ce6551ea3cfe27f2e5226f319fe839d24
 }
 
 .headerContent h2 {
