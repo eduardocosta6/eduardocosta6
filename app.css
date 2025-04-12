@@ -474,7 +474,7 @@ a.button:hover {
 
 .corner-icon {
   position: absolute;
-  top: 120px;  /* Moved down from 80px to 120px */
+  top: 120px;  /* Keep this as base position */
   right: 200px;
   width: 200px;
   height: auto;
@@ -482,6 +482,43 @@ a.button:hover {
   font-size: 12px;
   color: var(--primary-color);
   overflow: hidden;
+  z-index: 1;  /* Ensure it stays above other elements */
+}
+
+/* Extra Large Screens (4K and above) */
+@media screen and (min-width: 2560px) {
+  .corner-icon {
+    top: calc(120px + 2%);
+    right: calc(200px + 5%);
+    font-size: 14px;
+    width: 250px;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .corner-icon {
+    top: 120px;
+    right: calc(200px + 2%);
+  }
+}
+
+/* Tablets and smaller desktops */
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  .corner-icon {
+    top: 120px;
+    right: 200px;
+  }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 768px) {
+  .corner-icon {
+    top: 90px;
+    right: 100px;
+    font-size: 10px;
+    width: 150px;
+  }
 }
 
 .code-line {
