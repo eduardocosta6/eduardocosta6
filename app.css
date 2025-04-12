@@ -86,7 +86,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -136,13 +136,13 @@ html {
 /* color scheme ----------------------  */
 
 :root {
-  --primary-color: #2D3250;  /* Modern deep blue */
-  --secondary-color: #424769; /* Lighter blue */
-  --accent-color: #676F9D;   /* Muted purple */
-  --text-color: #232323;     /* Soft black for text */
-  --bg-color: #F5F5F5;       /* Light gray background */
-  --card-bg: #FFFFFF;        /* White for cards */
-  --shadow: 0 8px 30px rgba(0,0,0,0.12); /* Soft shadow */
+  --primary-color: #2D3250;  
+  --secondary-color: #424769; 
+  --accent-color: #676F9D;   
+  --text-color: #232323;     
+  --bg-color: #F5F5F5;       
+  --card-bg: #FFFFFF;        
+  --shadow: 0 8px 30px rgba(0,0,0,0.12); 
 }
 
 /* -------------------- */
@@ -172,7 +172,6 @@ body {
   font-weight: 700;
   margin-bottom: 0.5rem;
   background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
