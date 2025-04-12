@@ -128,7 +128,7 @@ html {
 }
 
 * {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 /* no formations ---------------------- */
@@ -136,13 +136,13 @@ html {
 /* color scheme ----------------------  */
 
 :root {
-  --primary-color: #2D3250;  
-  --secondary-color: #424769; 
-  --accent-color: #676F9D;   
-  --text-color: #232323;     
-  --bg-color: #F5F5F5;       
-  --card-bg: #FFFFFF;        
-  --shadow: 0 8px 30px rgba(0,0,0,0.12); 
+  --primary-color: #2d3250;
+  --secondary-color: #424769;
+  --accent-color: #676f9d;
+  --text-color: #232323;
+  --bg-color: #f5f5f5;
+  --card-bg: #ffffff;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* -------------------- */
@@ -160,10 +160,10 @@ body {
   background-color: var(--card-bg);
   padding: 3rem;
   width: 90%;
-  max-width: 1800px;  /* Increased from 1500px for larger screens */
+  max-width: 1800px; /* Increased from 1500px for larger screens */
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   margin: 2rem auto;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 /* Extra Large Screens (4K and above) */
@@ -190,11 +190,10 @@ body {
   }
 }
 
-
 /* Header Styles */
 .headerContent {
   text-align: left;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;  /* Increased from 4rem to 8rem */
 }
 
 .headerContent h1 {
@@ -220,6 +219,7 @@ body {
   gap: 2rem;
   align-items: flex-start;
   margin-bottom: 4rem;
+  padding-top: 2rem;  /* Added padding-top */
 }
 
 .pfp {
@@ -339,7 +339,7 @@ body {
 
 .button:hover {
   transform: translateX(5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .button .arrow {
@@ -362,7 +362,7 @@ a.button {
 
 a.button:hover {
   transform: translateX(5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
@@ -393,7 +393,7 @@ a.button:hover {
 }
 
 .icon-link::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -462,5 +462,12 @@ a.button:hover {
   .carousel-item img {
     height: 200px;
   }
-}
 
+  .headerContent {
+    margin-bottom: 6rem;  /* Slightly less space on mobile but still maintaining good separation */
+  }
+  
+  .about-me {
+    padding-top: 1rem;
+  }
+}
