@@ -158,12 +158,36 @@ body {
 
 .wrapper {
   background-color: var(--card-bg);
-  padding: 15px 25px;
-  width: 100%;
-  max-width: 1500px;
+  padding: 3rem;
+  width: 90%;
+  max-width: 1800px;  /* Increased from 1500px for larger screens */
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 2rem auto;
+  border-radius: 20px;
+}
+
+/* Extra Large Screens (4K and above) */
+@media screen and (min-width: 2560px) {
+  .wrapper {
+    max-width: 2200px;
+    padding: 4rem;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .wrapper {
+    max-width: 1800px;
+  }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
 }
 
 
