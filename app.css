@@ -279,6 +279,12 @@ body {
   overflow: hidden;
 }
 
+.projectImage img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
 .carousel {
   height: 100%;
 }
@@ -556,4 +562,32 @@ a.button:hover {
     font-size: 10px;
     width: 150px;
   }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 1rem;  /* Reduced from 1.5rem to 1rem */
+  background-image: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.9;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-indicators button {
+  background-color: var(--primary-color) !important;
+  opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
 }
