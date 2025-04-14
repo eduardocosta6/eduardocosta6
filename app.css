@@ -160,7 +160,7 @@ body {
   background-color: var(--card-bg);
   padding: 3rem;
   width: 90%;
-  max-width: 1800px; /* Increased from 1500px for larger screens */
+  max-width: 1800px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   margin: 2rem auto;
   border-radius: 5px;
@@ -193,7 +193,7 @@ body {
 /* Header Styles */
 .headerContent {
   text-align: left;
-  margin-bottom: 8rem;  /* Increased from 4rem to 8rem */
+  margin-bottom: 8rem;
 }
 
 .headerContent h1 {
@@ -217,9 +217,9 @@ body {
 .about-me {
   display: flex;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: stretch;
   margin-bottom: 4rem;
-  padding-top: 2rem;  /* Added padding-top */
+  padding-top: 2rem;
 }
 
 .pfp {
@@ -240,6 +240,21 @@ body {
   padding: 2rem;
   border-radius: 20px;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 250px;
+  overflow: hidden;
+}
+
+.myInfo h2 {
+  margin-bottom: 1rem;
+}
+
+.myInfo p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
 }
 
 /* Projects Section */
@@ -470,17 +485,23 @@ a.button:hover {
   }
 
   .headerContent {
-    margin-bottom: 6rem;  /* Slightly less space on mobile but still maintaining good separation */
+    margin-bottom: 6rem;
   }
   
   .about-me {
     padding-top: 1rem;
   }
+
+  .myInfo {
+    height: auto;
+    min-height: 250px;
+    width: 100%;
+  }
 }
 
 .corner-icon {
   position: absolute;
-  top: 120px;  /* Keep this as base position */
+  top: 160px;  /* Changed from 170px to 160px */
   right: 200px;
   width: 200px;
   height: auto;
@@ -488,13 +509,13 @@ a.button:hover {
   font-size: 12px;
   color: var(--primary-color);
   overflow: hidden;
-  z-index: 1;  /* Ensure it stays above other elements */
+  z-index: 1;
 }
 
 /* Extra Large Screens (4K and above) */
 @media screen and (min-width: 2560px) {
   .corner-icon {
-    top: calc(120px + 2%);
+    top: calc(160px + 2%);  /* Adjusted from 170px to 160px */
     right: calc(200px + 5%);
     font-size: 14px;
     width: 250px;
@@ -504,7 +525,7 @@ a.button:hover {
 /* Large Screens */
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .corner-icon {
-    top: 120px;
+    top: 160px;  /* Adjusted from 170px to 160px */
     right: calc(200px + 2%);
   }
 }
@@ -512,7 +533,7 @@ a.button:hover {
 /* Tablets and smaller desktops */
 @media screen and (min-width: 769px) and (max-width: 1439px) {
   .corner-icon {
-    top: 120px;
+    top: 160px;  /* Adjusted from 170px to 160px */
     right: 200px;
   }
 }
@@ -520,10 +541,14 @@ a.button:hover {
 /* Mobile Screens */
 @media screen and (max-width: 768px) {
   .corner-icon {
-    top: 90px;
-    right: 100px;
-    font-size: 10px;
-    width: 150px;
+    display: none;
+  }
+}
+
+/* Hide corner-icon at 816px or less */
+@media screen and (max-width: 816px) {
+  .corner-icon {
+    display: none;
   }
 }
 
