@@ -190,10 +190,11 @@ body {
   }
 }
 
-/* Header Styles */
+/* Header Styles - Enhanced */
 .headerContent {
   text-align: left;
   margin-bottom: 8rem;
+  position: relative;
 }
 
 .headerContent h1 {
@@ -205,12 +206,58 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.headerContent h1.hello {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInFromLeft 0.8s forwards;
+}
+
+.headerContent h1.name {
+  transform: translateX(100%);
+  opacity: 0;
+  animation: slideInFromRight 0.8s forwards 0.3s;
 }
 
 .headerContent h2 {
   font-size: 1.5rem;
   color: var(--secondary-color);
   font-weight: 600;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.8s;
+}
+
+@keyframes slideInFromLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsiveness for Header */
+@media screen and (max-width: 768px) {
+  .headerContent h1 {
+    font-size: 2.5rem;
+  }
+  
+  .headerContent h2 {
+    font-size: 1.2rem;
+  }
 }
 
 /* About Me Section */
