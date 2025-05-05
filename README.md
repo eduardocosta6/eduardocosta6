@@ -1,16 +1,25 @@
-## Hi there 👋
+# Eduardo Costa - Full Stack Web Developer
 
-<!--
-**eduardocosta6/eduardocosta6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 👋 About Me
+I'm a TEAIG (Técnico Especialista em Aplicações Informáticas de Gestão) passionate about Web Development. Always eager to learn and stay up to date with the latest technologies, I strive to improve my skills and gain hands-on experience in the field.
 
-Here are some ideas to get you started:
+I consider myself resourceful, determined, reliable, enthusiastic, and meticulous, always ready to take on new challenges and grow as a professional.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+## 🛠️ Skills
+- Frontend: HTML, CSS, JavaScript, React
+- Backend: PHP, Python
+- Database Management
+- Responsive Web Design
+
+## 🔭 Projects
+- **MedBayes**: An automated medical screening system using Bayes' Theorem
+- **My Agenda**: Web-based event management system built with PHP and MySQL
+- **Pricing Table**: Clean and responsive pricing component with modern CSS
+
+## 📫 Connect With Me
+- [GitHub](https://github.com/eduardocosta6)
+- [LinkedIn](https://www.linkedin.com/in/eduardo-costa-42969b24a/)
+- [Email](mailto:eduardoccosta06@gmail.com)
+
+## ⚡ Fun Fact
 -->
