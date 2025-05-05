@@ -663,3 +663,22 @@ a.button:hover {
 .carousel-indicators button.active {
   opacity: 1;
 }
+
+.construction-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(45deg, #f6b73c, #e09900);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.construction-badge:hover {
+  transform: translateY(-5px);
+}
