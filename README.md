@@ -1,4 +1,6 @@
 # Hi, im Eduardo
 
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=eduardocosta6&hide_progress=true)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=eduardocosta6&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=eduardocosta6&hide_progress=true )
